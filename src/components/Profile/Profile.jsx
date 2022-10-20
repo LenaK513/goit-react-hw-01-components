@@ -1,5 +1,9 @@
 import PropTypes from 'prop-types';
 import {
+  Image,
+  Name,
+  Tag,
+  Location,
   Stats,
   Element,
   Label,
@@ -15,11 +19,11 @@ export const Profile = ({
   return (
     <div className="profile">
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
+        <Image src={avatar} alt="User avatar" className="avatar" />
 
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <Name>{username}</Name>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
       </div>
 
       <Stats>

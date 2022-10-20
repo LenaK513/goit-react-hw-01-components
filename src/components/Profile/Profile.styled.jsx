@@ -5,33 +5,64 @@ import styled from '@emotion/styled';
 //   border-radius: 50%;
 // `;
 
+export const Image = styled.img`
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+`;
+
+export const Name = styled.p`
+  font-family: Segoe UI;
+  font-size: 32px;
+  font-weight: 700;
+  color: #595858;
+`;
+
+export const Tag = styled.p`
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-weight: 400;
+  color: #8a888a;
+`;
+
+export const Location = styled.p`
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-weight: 400;
+  color: #8a888a;
+`;
+
 export const Stats = styled.ul`
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: space-evenly;
+  margin-top: 50px;
+  justify-content: center;
   background-color: #fff;
   border: solid 1px rgb(226, 224, 224);
 `;
 export const Element = styled.li`
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 40px;
 `;
 
 export const Label = styled.span`
   font-family: BlinkMacSystemFont;
   font-size: 18px;
   font-weight: 700;
-  color: #ccc;
+  color: #8a888a;
   letter-spacing: 2px;
 `;
 export const Quantity = styled.span`
   font-family: Segoe UI;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 900;
-  color: #000;
+  color: #404040;
+  margin-top: 5px;
   letter-spacing: 1px;
 `;
