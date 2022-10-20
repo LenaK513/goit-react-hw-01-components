@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const Profile = ({ username, tag, location, avatar, stars }) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className="profile">
       <div className="description">
@@ -32,4 +32,14 @@ export const Profile = ({ username, tag, location, avatar, stars }) => {
   );
 };
 
-// Profile.PropTypes = {};
+Profile.PropTypes.exact({
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.node.isRequired,
+  stats: PropTypes.exact({
+    followers: PropTypes.number.isRequired,
+    view: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
+});
