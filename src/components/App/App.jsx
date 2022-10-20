@@ -1,15 +1,19 @@
 import { Profile } from 'components/Profile/Profile';
+import { Container } from 'components/App/App.styled';
+import user from '../user.json';
 
 export const App = () => {
   return (
-    <div>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-    </div>
+    <Container>
+      <div>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+      </div>
+    </Container>
   );
 };
