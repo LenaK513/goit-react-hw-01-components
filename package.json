@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://LenaK513/goit-react-hw-01-components",
   "dependencies": {
+    "@emotion/primitives": "^11.10.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@testing-library/jest-dom": "^5.16.3",
