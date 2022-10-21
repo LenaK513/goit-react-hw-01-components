@@ -41,14 +41,17 @@ export const Stats = styled.ul`
   margin: 0;
   padding: 0;
   margin-top: 50px;
-  justify-content: center;
-  background-color: #fff;
+  justify-content: space-evenly;
+  background-color: #d4d6d4;
   border: solid 1px rgb(226, 224, 224);
 `;
 export const Element = styled.li`
   display: flex;
   flex-direction: column;
   padding: 40px;
+  &:not(:last-child) {
+    border-right: solid 1px #858585;
+  }
 `;
 
 export const Label = styled.span`
