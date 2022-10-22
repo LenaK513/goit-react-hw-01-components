@@ -20,8 +20,8 @@ export const Dot = styled.span`
   margin-right: 15px;
   border-radius: 50%;
   background-color: gray;
-  background-color: ${({ isOnline }) => {
-    return (isOnline = true ? 'green' : 'red');
+  background-color: ${({ type }) => {
+    return type ? 'green' : 'red';
   }};
 `;
 
