@@ -4,5 +4,6 @@ export const List = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 `;
