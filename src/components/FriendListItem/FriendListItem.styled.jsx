@@ -19,14 +19,10 @@ export const Dot = styled.span`
   height: 20px;
   margin-right: 15px;
   border-radius: 50%;
-`;
-
-export const Online = styled.span`
-  background-color: green;
-`;
-
-export const Offline = styled.span`
-  background-color: red;
+  background-color: gray;
+  background-color: ${({ isOnline }) => {
+    return (isOnline = true ? 'green' : 'red');
+  }};
 `;
 
 export const Name = styled.p`
