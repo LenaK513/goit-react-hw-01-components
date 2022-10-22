@@ -9,7 +9,6 @@ import {
 } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
-  console.log(items.length);
   return (
     <TableWrap>
       <TableHead>
